@@ -1,3 +1,14 @@
+"""
+app.py
+
+Flask on Herouku web app example
+Jeremy Smith
+
+Cloned from https://github.com/thedataincubator/flask-framework
+Modified 8/18/2017
+
+"""
+
 from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
