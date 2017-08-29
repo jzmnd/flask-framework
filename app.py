@@ -15,7 +15,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  return render_template('index.html')
+    return render_template('index.html')
 
 if __name__ == '__main__':
-  app.run(port=33507)
+    port = int(os.environ.get("PORT", 33507))
+    app.run(port=port)
